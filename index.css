@@ -1,0 +1,154 @@
+body {
+
+    background-image: url('images/wallpaper2.jpeg');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    justify-content: center;
+    font-family: 'PT Mono', monospace;
+  }
+  
+  
+  #text {
+    font-size: 5em;
+    color: white;
+    animation: slide;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+    padding: 2;
+    overflow-x: hidden;
+    margin-top: 30%;
+    display: flex;
+  }
+  
+  span::before {
+    content: "Are You Ready?";
+    animation: animate 7s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+    padding: 0;
+  }
+  
+  @keyframes animate {
+  
+    0% {
+      content: "Are You Ready?" ";
+  
+    }
+  
+    5% {
+      content: " Are You Ready";
+    }
+  
+    10% {
+      content: "Are You Read";
+    }
+  
+    15% {
+      content: "Are You Rea";
+    }
+  
+    20% {
+      content: "Are You Re";
+    }
+  
+    25% {
+      content: "Are You R";
+    }
+  
+    30% {
+      content: "Are You";
+    }
+  
+    35% {
+      content: "Are Yo";
+    }
+  
+    40% {
+      content: "Are Y";
+    }
+  
+    45% {
+      content: "Are";
+    }
+  
+    50% {
+      content: "Ar";
+    }
+  
+    55% {
+      content: "A";
+    }
+  
+    60% {
+      content: "";
+    }
+  
+    65% {
+      content: "W";
+    }
+  
+    70% {
+      content: "WW";
+    }
+  
+    75% {
+      content: "WWI";
+      color: white;
+    }
+  
+    80% {
+      content: "WWI";
+    }
+  
+    85% {
+      content: "WWI";
+    }
+  
+    90% {
+      content: "WWI";
+    }
+  
+    95% {
+      content: "WWI";
+    }
+  
+    100% {
+      content: "WWI";
+      color: red;
+    }
+  }
+  
+  button.button {
+    opacity: 0.7;
+    animation-name: animate2;
+    animation-duration: 2.45s;
+    animation-delay: 5.05s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    visibility: hidden;
+  }
+  
+  @keyframes animate2 {
+    0% {
+      opacity: 0;
+    }
+  
+    25% {
+      opacity: 0.25;
+    }
+  
+    50% {
+      opacity: 0.5;
+    }
+  
+    75% {
+      opacity: 0.6;
+    }
+  
+    100% {
+      opacity: 0.7;
+      visibility: visible;
+    }
+  }
